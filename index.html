@@ -98,7 +98,9 @@
       <h1 class="text-4xl text-center text-black font-semibold">
         Best offers for you
       </h1>
-      <div class="flex justify-between my-6">
+      <div
+        class="flex flex-col lg:flex-row justify-between gap-4 mx-2 lg:mx-0 my-6"
+      >
         <img src="./images/Group113.png" alt="" />
         <img src="./images/Rectangle8.png" alt="" />
       </div>
@@ -107,27 +109,37 @@
       </div>
     </section>
     <!-- p.h Paribahan section  -->
-    <section class="rounded-t-xl border-t border-[#1DD100]">
-      <div class="max-w-7xl mx-auto">
-        <div class="text-center max-w-3xl mx-auto my-10">
+    <section class="rounded-t-3xl border-t border-[#1DD100]">
+      <div class="max-w-7xl mx-auto mt-10">
+        <div class="text-center max-w-3xl mx-auto my-6 px-2 lg:px-0">
           <h1 class="text-2xl lg:text-4xl font-semibold">P.H Paribahan</h1>
           <p class="lg:text-lg mt-4">
             Yes, you can run unit tests and view the results directly within the
             app. The integrated testing features allow for a streamlined .
           </p>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          <div class="col-span-3">
-            <div class="flex justify-between items-center">
-              <div class="flex items-center gap-2">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:h-auto items-center mx-2 lg:mx-0"
+        >
+          <div class="lg:col-span-3">
+            <div
+              class="flex flex-col lg:flex-row lg:justify-between lg:items-center"
+            >
+              <div class="flex flex-col lg:flex-row lg:items-center gap-2">
                 <img src="./images/bus-logo.png" alt="" />
-                <div>
-                  <h3>Greenline Paribahan</h3>
-                  <p>Coach-009-WEB ! AC_Business</p>
+                <div class="text-center mt-4 mb-4">
+                  <h3 class="font-bold text-sm lg:text-xl">
+                    Greenline Paribahan
+                  </h3>
+                  <p class="text-[#03071280] text-sm">
+                    Coach-009-WEB ! AC_Business
+                  </p>
                 </div>
               </div>
               <div>
-                <button class="btn">
+                <button
+                  class="btn cursor-text text-[#1DD100] bg-[#1DD10025] hover:bg-[#1DD10025] border-none"
+                >
                   <img src="./images/seat-green.png" alt="" />
                   <p><span id="seat-left">40</span> Seats left</p>
                 </button>
@@ -147,19 +159,29 @@
               </h4>
               <p class="mb-4 font-semibold">9:00 PM</p>
             </div>
-            <div class="flex justify-between items-center">
-              <button class="btn btn-active">Boarding Point - Laxmipur</button>
-              <button class="btn btn-active">Dropping Point - Bogura</button>
-              <button class="btn btn-active">Est. Time - 11 Hour</button>
+            <div
+              class="flex flex-col lg:flex-row justify-between items-center gap-4"
+            >
+              <button class="btn border-none bg-[#03071220]">
+                Boarding Point - Laxmipur
+              </button>
+              <button class="btn border-none bg-[#03071220]">
+                Dropping Point - Bogura
+              </button>
+              <button class="btn border-none bg-[#03071220]">
+                Est. Time - 11 Hour
+              </button>
             </div>
           </div>
 
-          <div class="col-span-1 flex items-start">
+          <div class="lg:col-span-1 flex items-center">
             <div>
               <img src="./images/info-devider.png" alt="" />
             </div>
-            <div class="flex flex-col justify-start items-center">
-              <img src="./images/fare.png" alt="" />
+            <div class="flex flex-col items-center">
+              <div>
+                <img src="./images/fare.png" alt="" />
+              </div>
               <p class="text-center font-bold text-xl">
                 550 Taka <br />
                 <span class="text-[#03071260]">Per Seat</span>
@@ -167,8 +189,302 @@
             </div>
           </div>
         </div>
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 mt-8">
+          <div class="lg:col-span-3">
+            <div class="border-b-2 border-dashed">
+              <h3 class="mb-2 text-2xl font-semibold">Select Your Seat</h3>
+            </div>
+            <div
+              class="flex justify-between items-center border-b-2 border-dashed"
+            >
+              <div class="flex items-center gap-2 my-4">
+                <img src="./images/seat-gray.png" alt="" />
+                <h5 class="text-lg font-medium text-[#03071270]">Available</h5>
+              </div>
+              <div class="flex items-center gap-2 mb-2">
+                <img src="./images/seat-green-filled.png" alt="" />
+                <h5 class="text-[#1DD100] text-lg font-medium">Selected</h5>
+              </div>
+            </div>
+            <div class="flex justify-end mt-4">
+              <button class="btn border-none bg-[#03071220] px-8">
+                <img src="./images/tabler-icon-steering-wheel.png" alt="" />
+              </button>
+            </div>
+            <div
+              onclick="allSeatArea(event)"
+              class="grid grid-cols-5 gap-x-6 gap-y-8 mt-8 items-center"
+            >
+              <h3 class="text-lg text-[#03071260] font-semibold">A</h3>
+              <button id="A1" class="text-lg text-[#03071260] font-semibold">
+                A1
+              </button>
+              <button id="A2" class="text-lg text-[#03071260] font-semibold">
+                A2
+              </button>
+              <button id="A3" class="text-lg text-[#03071260] font-semibold">
+                A3
+              </button>
+              <button id="A4" class="text-lg text-[#03071260] font-semibold">
+                A4
+              </button>
+              <h3 class="text-lg text-[#03071260] font-semibold">B</h3>
+              <button id="B1" class="text-lg text-[#03071260] font-semibold">
+                B1
+              </button>
+              <button id="B2" class="text-lg text-[#03071260] font-semibold">
+                B2
+              </button>
+              <button id="B3" class="text-lg text-[#03071260] font-semibold">
+                B3
+              </button>
+              <button id="B4" class="text-lg text-[#03071260] font-semibold">
+                B4
+              </button>
+              <h3 class="text-lg text-[#03071260] font-semibold">C</h3>
+              <button id="C1" class="text-lg text-[#03071260] font-semibold">
+                C1
+              </button>
+              <button id="C2" class="text-lg text-[#03071260] font-semibold">
+                C2
+              </button>
+              <button id="C3" class="text-lg text-[#03071260] font-semibold">
+                C3
+              </button>
+              <button id="C4" class="text-lg text-[#03071260] font-semibold">
+                C4
+              </button>
+              <h3 class="text-lg text-[#03071260] font-semibold">D</h3>
+              <button id="D1" class="text-lg text-[#03071260] font-semibold">
+                D1
+              </button>
+              <button id="D2" class="text-lg text-[#03071260] font-semibold">
+                D2
+              </button>
+              <button id="D3" class="text-lg text-[#03071260] font-semibold">
+                D3
+              </button>
+              <button id="D4" class="text-lg text-[#03071260] font-semibold">
+                D4
+              </button>
+              <h3 class="text-lg text-[#03071260] font-semibold">E</h3>
+              <button id="E1" class="text-lg text-[#03071260] font-semibold">
+                E1
+              </button>
+              <button id="E2" class="text-lg text-[#03071260] font-semibold">
+                E2
+              </button>
+              <button id="E3" class="text-lg text-[#03071260] font-semibold">
+                E3
+              </button>
+              <button id="E4" class="text-lg text-[#03071260] font-semibold">
+                E4
+              </button>
+              <h3 class="text-lg text-[#03071260] font-semibold">F</h3>
+              <button id="F1" class="text-lg text-[#03071260] font-semibold">
+                F1
+              </button>
+              <button id="F2" class="text-lg text-[#03071260] font-semibold">
+                F2
+              </button>
+              <button id="F3" class="text-lg text-[#03071260] font-semibold">
+                F3
+              </button>
+              <button id="F4" class="text-lg text-[#03071260] font-semibold">
+                F4
+              </button>
+              <h3 class="text-lg text-[#03071260] font-semibold">G</h3>
+              <button id="G1" class="text-lg text-[#03071260] font-semibold">
+                G1
+              </button>
+              <button id="G2" class="text-lg text-[#03071260] font-semibold">
+                G2
+              </button>
+              <button id="G3" class="text-lg text-[#03071260] font-semibold">
+                G3
+              </button>
+              <button id="G4" class="text-lg text-[#03071260] font-semibold">
+                G4
+              </button>
+              <h3 class="text-lg text-[#03071260] font-semibold">H</h3>
+              <button id="H1" class="text-lg text-[#03071260] font-semibold">
+                H1
+              </button>
+              <button id="H2" class="text-lg text-[#03071260] font-semibold">
+                H2
+              </button>
+              <button id="H3" class="text-lg text-[#03071260] font-semibold">
+                H3
+              </button>
+              <button id="H4" class="text-lg text-[#03071260] font-semibold">
+                H4
+              </button>
+              <h3 class="text-lg text-[#03071260] font-semibold">I</h3>
+              <button id="I1" class="text-lg text-[#03071260] font-semibold">
+                I1
+              </button>
+              <button id="I2" class="text-lg text-[#03071260] font-semibold">
+                I2
+              </button>
+              <button id="I3" class="text-lg text-[#03071260] font-semibold">
+                I3
+              </button>
+              <button id="I4" class="text-lg text-[#03071260] font-semibold">
+                I4
+              </button>
+              <h3 class="text-lg text-[#03071260] font-semibold">J</h3>
+              <button id="J1" class="text-lg text-[#03071260] font-semibold">
+                J1
+              </button>
+              <button id="J2" class="text-lg text-[#03071260] font-semibold">
+                J2
+              </button>
+              <button id="J3" class="text-lg text-[#03071260] font-semibold">
+                J3
+              </button>
+              <button id="J4" class="text-lg text-[#03071260] font-semibold">
+                J4
+              </button>
+            </div>
+          </div>
+          <div class="lg:col-span-2 border-l-2 border-dashed ml-4">
+            <div class="border-b-2 border-dashed ml-4 mb-12">
+              <h3 class="mb-2 text-2xl font-semibold">Select Your Seat</h3>
+            </div>
+            <div
+              class="border-b-2 border-dashed ml-4 flex justify-between items-center"
+            >
+              <button class="font-semibold">
+                Seat
+                <div
+                  class="badge badge-secondary bg-[#1DD100] border-none"
+                  id="totalTicket"
+                >
+                  0
+                </div>
+              </button>
+              <h3 class="mb-2 font-semibold">Class</h3>
+              <h3 class="mb-2 font-semibold">Price</h3>
+            </div>
+            <div id="ticketDetails" class="ml-4"></div>
+            <div class="ml-4 flex justify-between items-center my-2">
+              <h3 id="seat " class="font-semibold">Total Price</h3>
+              <h3 class="mb-2 font-semibold">
+                BDT <span id="totalPrice">00</span>
+              </h3>
+            </div>
+            <div class="flex justify-between items-center ml-4 my-4">
+              <input
+                id="coupon"
+                type="text"
+                placeholder="Have any coupon?"
+                class="input w-full"
+              />
+              <button
+                id="apply"
+                class="btn ml-4 bg-[#1DD100] text-white hover:bg-[#1DD100]"
+                disabled
+              >
+                Apply
+              </button>
+            </div>
+            <div class="ml-4 flex justify-between items-center my-2">
+              <h3 id="seat" class="font-semibold">Grand Total</h3>
+              <h3 class="mb-2 font-semibold">
+                BDT <span id="grandTotal">00</span>
+              </h3>
+            </div>
+
+            <label class="form-control w-full ml-4 my-4">
+              <div class="label">
+                <span class="label-text text-black font-semibold"
+                  >Passenger Name*</span
+                >
+              </div>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                class="input input-bordered w-full"
+              />
+            </label>
+            <label class="form-control w-full ml-4 my-4">
+              <div class="label">
+                <span class="label-text text-black font-semibold"
+                  >Phone Number*</span
+                >
+              </div>
+              <input
+                type="number"
+                id="number"
+                required
+                placeholder="Enter your phone number"
+                class="input input-bordered w-full"
+              />
+            </label>
+            <label class="form-control w-full ml-4 my-4">
+              <div class="label">
+                <span class="label-text text-black font-semibold"
+                  >Email ID</span
+                >
+              </div>
+              <input
+                type="email"
+                id="name"
+                placeholder="Enter your email id"
+                class="input input-bordered w-full"
+              />
+            </label>
+            <button
+              onclick="my_modal_5.showModal()"
+              id="next"
+              class="btn ml-4 bg-[#1DD100] text-white hover:bg-[#1DD100] w-full"
+              disabled
+            >
+              Next
+            </button>
+
+            <div class="ml-4 text-center max-w-xl mt-2">
+              <a class="link link-neutral mr-4">Terms and Conditions</a>
+              <a class="link link-neutral">Cancellation Policy</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <!-- modal  -->
+    <!-- Open the modal using ID.showModal() method -->
+
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box flex flex-col justify-center items-center">
+        <div class="text-center">
+          <img src="./images/success.png" alt="" />
+        </div>
+        <h3
+          class="font-bold text-2xl uppercase text-center my-4 text-[#27AE60]"
+        >
+          Success
+        </h3>
+        <p class="py-4 text-center font-medium text-xl">
+          Thank you for Booking Our Bus Seats. <br />
+          We are working hard to find the best service and deals for you.
+          <br />
+          <span class="mt-2 mb-4 text-xl text-[#11111150]">
+            Shortly you will find a confirmation in your email.</span
+          >
+        </p>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button
+              class="border-none bg-[#27AE60] hover:bg-[#27AE60] text-white rounded-lg px-10 py-2 text-lg font-medium"
+            >
+              Continue
+            </button>
+          </form>
+        </div>
+      </div>
+    </dialog>
 
     <footer class="bg-[#030712] text-white">
       <div class="lg:w-[1280px] px-2 lg:px-0 py-[50px] lg:py-[100px] mx-auto">
@@ -207,5 +523,6 @@
         </div>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
